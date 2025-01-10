@@ -12,32 +12,43 @@
         border: 2px solid black;
         box-shadow: 0px 4px 8px black;
         width: 350px;
-        height: 90vh;
+        /* height: 90vh; */
         border-radius: 15px;
         background-color: white;
         margin: 0 auto;
-        margin-top: 15px;
-        padding: 10px;
+        margin-top: 35px;
+
+        padding: 10px 10px;
       }
       .card-title img {
-        width: 300px;
-        padding: 30px 30px;
-        border-radius: 45px;
+        width: 325px;
+        padding: 10px 20px;
+        border-radius: 40px;
       }
-      .text {
+      .label {
         background-color: yellow;
         display: inline-block;
-        font-size: xx-small;
+        font-size: small;
         padding-left: 10px;
+        border-radius: 5px;
       }
-      .p img {
+      .p1 img {
         padding: 10px;
         width: 50px;
         border-radius: 50%;
       }
-      .p i {
+
+      .p1 p {
+        color: #666;
+      }
+      .p1 i {
         font-weight: bold;
         padding-top: 20px;
+      }
+      .last {
+        display: flex;
+        align-items: center;
+        gap: 10px;
       }
     </style>
   </head>
@@ -47,21 +58,22 @@
         <img src="f.jpg" alt="flower" />
       </div>
       <div class="text">
-        <h1>Learning</h1>
+        <span class="label">Learning</span>
       </div>
-      <div class="p">
+      <div class="p1">
         <p>Publicado em 21 de dezembro de 2023</p>
 
-        <b>Fundamentos de HTML e CSS</b>
+        <b>Fundamentos de HTML & CSS</b>
 
         <p>
           Essas linguagens sao a espinha dorsal de todo site, deflinindo
           estrutura,conteudo e apresentacao
         </p>
+        <div class="last">
+          <img src="b.jpg" alt="Bleson " />
 
-        <img src="b.jpg" alt="Bleson " />
-
-        <i>Bleson Philip</i>
+          <i>Bleson Philip</i>
+        </div>
       </div>
     </div>
   </body>
