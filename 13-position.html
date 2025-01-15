@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      /* correct method to use position 1st parent child relative and child absolute */
+      .container {
+        border: 2px solid black;
+        width: 500px;
+        padding: 20px;
+        margin: 40px auto;
+        position: relative;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <h1>This is a sample text</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        asperiores mollitia distinctio provident excepturi laboriosam error ut
+        cupiditate rerum quisquam, maxime in corporis expedita ullam illum
+        quibusdam fuga dignissimos quo?
+      </p>
+    </div>
+  </body>
+</html>
