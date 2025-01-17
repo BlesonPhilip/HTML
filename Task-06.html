@@ -19,12 +19,14 @@
       .navbar {
         background-color: black;
         border: 2px solid gray;
-        height: 30px;
+        height: 50px;
         display: flex;
+        /* justify-content: space-between; */
         gap: 50px;
         align-items: center;
         padding-left: 60px;
         /* margin: 0; */
+        /* padding-right: 0; */
       }
       .navbar a {
         color: white;
@@ -39,6 +41,8 @@
         display: flex;
         gap: 10px;
         padding-left: 550px;
+
+        /* padding-right: 50px; */
         /* background-color: black; */
       }
       .headbox {
@@ -64,20 +68,47 @@
       .main {
         display: flex;
         text-align: center;
-        padding: 10px;
+        padding: 20px;
+        margin: 0 50px;
       }
       .main p {
-        padding: 20px;
+        /* padding-left: -50px; */
         color: grey;
+        /* margin: 0 50px; */
       }
       p {
-        padding: 10px;
+        padding: 20px 20px 0px 0px;
+        margin: 0 50px;
       }
       /* .p {
         /* margin: 0;
         margin-top: 30px; */
       /* } */
-      .imgbox {
+      .cards {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin: 0 50px;
+      }
+
+      .card {
+        background: #f4f4f4;
+        padding: 20px;
+        width: 30%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        background: #ddd;
+        /* height: 200px; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #555;
+      }
+      /* .imgbox {
         display: flex;
         justify-content: space-evenly;
         padding-top: 20px;
@@ -85,7 +116,7 @@
       }
       .imgbox img {
         width: 300px;
-      }
+      } */
       .cont {
         border: 1px solid none;
         display: flex;
@@ -99,12 +130,33 @@
         /* display: inline-block; */
         /* width: 100px; */
       }
+
       .lastpara {
-        border: 1px solid yellow;
-        background-color: yellow;
-        color: black;
-        /* width: 100%; */
-        height: 300px;
+        background: #f1c40f;
+        height: 230px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .footer-card {
+        width: 30%;
+        padding-top: 25px;
+        color: #333;
+      }
+      /* .footer-card p {
+        padding-right: 20px;
+      } */
+
+      .footer-card button {
+        background: #ffe9e9;
+        color: hsl(0, 0%, 4%);
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+      .footer {
+        margin: 20px;
       }
       .footer a {
         /* border: 2px solid white; */
@@ -116,6 +168,7 @@
       }
       .footer p {
         padding-left: 50px;
+        /* margin-top: 10px; */
       }
     </style>
   </head>
@@ -136,7 +189,7 @@
       </div>
     </div>
     <div class="headbox">
-      <h1>Dramatically Engage</h1>
+      <h1><i class="fa fa-home" aria-hidden="true"></i> Dramatically Engage</h1>
       <h5>
         Objectively innovative empowered manufactured products whereas parallel
         platforms
@@ -154,27 +207,58 @@
       repellendus reprehenderit ut!
     </p>
 
-    <div class="imgbox">
-      <img src="b.jpg" alt="bles" />
-
-      <img src="b.jpg" alt="bles" />
-      <img src="b.jpg" alt="bles" />
+    <div class="cards">
+      <div class="card">
+        <img src="b.jpg" alt="" />
+        <h3>Efficiently Unleash</h3>
+        <p>
+          Collaboratively administrate empowered markets via plug-and-play
+          networks...
+        </p>
+      </div>
+      <div class="card">
+        <img src="b.jpg" alt="" />
+        <h3>Completely Synergize</h3>
+        <p>
+          Dramatically maintain clicks-and-mortar solutions without functional
+          solutions...
+        </p>
+      </div>
+      <div class="card">
+        <img src="b.jpg" alt="" />
+        <h3>Dynamically Procrastinate</h3>
+        <p>
+          Professionally cultivate one-to-one customer service with robust
+          ideas...
+        </p>
+      </div>
     </div>
-    <div class="cont">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-        aperiam veritatis aspernatur iure voluptatem facilis inventore ut illo
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-        ipsum libero iure eveniet harum labore necessitatibus autem aperiam et
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-        illo, ex sapiente ratione fugit magnam et minus omnis doloremque
-      </p>
+    <div class="lastpara">
+      <div class="footer-card">
+        <h3>Dynamically Procrastinate</h3>
+        <p>
+          Collaboratively administrate empowered markets via plug-and-play
+          networks...
+        </p>
+        <button>Procrastinate</button>
+      </div>
+      <div class="footer-card">
+        <h3>Efficiently Unleash</h3>
+        <p>
+          Professionally cultivate one-to-one customer service with robust
+          ideas...
+        </p>
+        <button>Procrastinate</button>
+      </div>
+      <div class="footer-card">
+        <h3>Completely Synergize</h3>
+        <p>
+          Dramatically maintain clicks-and-mortar solutions without functional
+          solutions...
+        </p>
+        <button>Procrastinate</button>
+      </div>
     </div>
-    <div class="lastpara"></div>
     <div class="footer">
       <a href=" ">Terms & conditions | Privacy Policy | Contact</a>
       <p>Copyright @ Example.com 2015</p>
