@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      @keyframes myanim {
+        /* from {
+          border-radius: 0;
+        }
+        to {
+          border-radius: 50%;
+          transform: translate(600px, 0);
+        }
+      } */
+        0% {
+          border-radius: 0;
+          transform: translate(0);
+        }
+        30% {
+          border-radius: 10px;
+          transform: translate(40px);
+        }
+        60% {
+          border-radius: 50%;
+          transform: translate(0, 40px);
+        }
+        90% {
+          border-radius: 10px;
+          transform: translate(40px, 40px);
+        }
+        100% {
+          border-radius: 0;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes myani {
+        from {
+          background-color: rgb(51, 180, 18);
+          border-radius: 0;
+        }
+        to {
+          background-color: aquamarine;
+          transform: translate(600px, 50px);
+          border-radius: 50%;
+        }
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        animation-name: myanim;
+        animation-duration: 5s;
+      }
+      .box-1 {
+        /* padding: 10px; */
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        animation-name: myani;
+        animation-duration: 5s;
+        /* animation-timing-function: ; */
+        animation-iteration-count: 2;
+        animation-delay: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box-1"></div>
+  </body>
+</html>

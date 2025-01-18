@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Box-sizing</title>
+    <style>
+      .box-1 {
+        width: 400px;
+        border: 1px solid black;
+        margin: 10px;
+        padding: 20px;
+      }
+      .box-2 {
+        width: 400px;
+        border: 1px solid black;
+        margin: 10px;
+
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div class="box-1">
+      <h1>this is a sample heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos
+        fugit dolorum delectus provident ut consequatur odit saepe
+        exercitationem, sapiente et, nulla consequuntur, veniam maxime! Dolore
+        corrupti repellat qui nesciunt?
+      </p>
+    </div>
+    <div class="box-2">
+      <h1>this is a sample heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos
+        fugit dolorum delectus provident ut consequatur odit saepe
+        exercitationem, sapiente et, nulla consequuntur, veniam maxime! Dolore
+        corrupti repellat qui nesciunt?
+      </p>
+    </div>
+  </body>
 </html>
