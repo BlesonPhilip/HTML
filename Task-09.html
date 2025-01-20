@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Task-09 Responsive</title>
+    <style>
+      body {
+        background-color: rgb(73, 73, 73);
+        margin: 0;
+      }
+      .navbar {
+        width: fit-content
+        height: 100px;
+        border: 1px solid rgb(238, 221, 221);
+        /* height: fit-content; */
+        /* background-color: #173d59; */
+        /* opacity: 0.5; */
+        display: grid;
+        align-items: center;
+        grid-template-columns: 20px 20px 250px 30px 30px 30px 30px 20px 20px;
+        gap: 40px;
+        padding-left: 40px;
+      }
+      .navbar a {
+        color: rgb(120, 122, 124);
+        font-size: 30px;
+        
+      }
+      a:hover {
+        color: aqua;
+      }
+      /* .navbar input {
+        border-radius: 30px;
+        background-color: black;
+        border: none;
+      } */
+      .search button {
+        gap: 20px;
+        background-color: rgb(52, 51, 51);
+        opacity: 1;
+        color: lightcyan;
+        width: 590px;
+        border-radius: 50px;
+        display: grid;
+        grid-template-columns: 10px 120px 180px 100px;
+        align-items: center;
+        /* padding: 10px; */
+        box-sizing: border-box;
+        border: none;
+        justify-content: end;
+        /* margin: 0; */
+        /* padding-left: -500px; */
+        /* margin-left: -100px; */
+      }
+      .third {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        gap: 30px;
+        margin-left: 350px;
+        cursor: pointer;
+      }
+      /* .third:hover{
+        
+      } */
+      
+       .toggle{
+        display: flex;
+        gap: 30px;
+        color:white;
+        /* justify-content: end; */
+        /* padding-right: 0; */
+        padding-left: 100px;
+       }
+       @media(width<1000px){
+        .third{
+          display: none;
+       }
+        .bar{
+          display: block;
+        }
+
+       }
+       @media(width>1000px){
+        .bar{
+          display: none;
+        }
+       }
+    </style>
+  </head>
+  <body>
+    <div class="contanier">
+      <div class="navbar">
+        <i class="fa-solid fa-bars bar"></i>
+        <i class="fa-brands fa-react fa-l react" style="color: #74c0fc;font-size: 40px;"></i>
+        <a href="">v19</a>
+
+        <div class="search">
+          <button>
+            <i class="fa-solid fa-magnifying-glass" style="color: #f6f9fe;margin-left: -140px;"></i>
+            <input type="text" style="background-color: rgb(30, 30, 30); border: none;border-radius: 5px;opacity: 0.5;color: white;margin-left:-50px;" name="" id="" placeholder="Search" />
+            <p style="padding-left: 190px;">alt</p>
+            <h4>k</h4>
+          </button>
+        </div>
+
+        <div class="third">
+          <h2>Learn</h2>
+          <h2>Reference</h2>
+          <h2>Community</h2>
+          <h2>Blog</h2>
+        </div>
+
+        <div class="toggle">
+          <i class="fa-solid fa-toggle-on dark" style="padding-left: 750px;color:white;"></i>
+          
+        <i class="fa-solid fa-sun light_theme_icon" style="font-size: 17px"></i>
+        <i class="fa-solid fa-language language" style="font-size: 17px"></i>
+        <i class="fa-brands fa-github github_icon" style="font-size: 17px"></i>
+        </div>
+      </div>
+      </div>
+      <div class="main">
+        <i class="fa-brands fa-react fa-2xl icon" style="color: #74c0fc; padding-top: 150px;display: flex;justify-content: center;font-size: 100px;"></i>
+      </div>
+    
+      </div>
+    </div>
+  </body>
+</html>
