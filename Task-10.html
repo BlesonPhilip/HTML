@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Figma Challenge</title>
+    <style>
+      * {
+        margin: 0;
+        /* box-sizing: border-box; */
+        font-size: 16px;
+      }
+      .main {
+        background-color: #68d09f;
+        height: 500px;
+        width: 100%;
+      }
+      .navbar {
+        width: 100%;
+        justify-content: space-evenly;
+        height: 30px;
+        /* position: relative; */
+        /* left: 1 */
+
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+      .left {
+        display: flex;
+        gap: 10px;
+        font-size: large;
+        position: relative;
+        left: -50px;
+      }
+      .right {
+        display: flex;
+        gap: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #000;
+      }
+      .content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        /* top: 20%; */
+        color: white;
+        /* padding-top: 30px; */
+      }
+      .cont {
+        /* border: 1px solid #19f990; */
+        /* padding-top: 10px; */
+        /* width: 400px; */
+        /* height: 242px; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .fig img {
+        /* padding-top: 10px; */
+        width: 490px;
+      }
+      .wel {
+        font-size: larger;
+      }
+      .first {
+        background-color: rgb(255, 255, 255);
+
+        padding: 10px;
+        /* margin-top: 10px; */
+      }
+      .a {
+        padding: 10px;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+      }
+      .partners {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .partners img {
+        padding: 40px 0;
+        width: 50px;
+      }
+      .learn {
+        display: flex;
+        justify-content: center;
+      }
+      .learn button {
+        border: none;
+        background-color: #000;
+        color: white;
+        text-align: center;
+        width: 120px;
+        height: 30px;
+      }
+      .second {
+        /* padding-top: 50px */
+        margin-top: 50px;
+        padding-top: 20px;
+
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-evenly;
+      }
+      .for_img img {
+        width: 300px;
+      }
+
+      .sec_cont button {
+        border: none;
+        background-color: #000;
+        color: white;
+
+        width: 120px;
+        height: 30px;
+      }
+      .sec_cont {
+        padding: 20px;
+      }
+      .third {
+        /* padding-top: 50px */
+        margin-top: 50px;
+        padding-top: 20px;
+
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-evenly;
+      }
+      .for_img img {
+        width: 300px;
+      }
+
+      .th_cont button {
+        border: none;
+        background-color: #000;
+        color: white;
+        width: 120px;
+        height: 30px;
+      }
+      .th_cont {
+        padding: 20px;
+      }
+      .four {
+        padding-top: 20px;
+      }
+      .team {
+        text-align: center;
+      }
+      .b {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      .b button {
+        background-color: #000;
+        color: aliceblue;
+      }
+      .card {
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+      .card1 {
+        border: 1px solid rgb(220, 255, 255);
+        padding: 10px;
+        box-shadow: 1px 1px 3px 3px wheat;
+      }
+      .card1 img {
+        width: 100px;
+        border: 1px solid #000;
+        border-radius: 50%;
+      }
+
+      .card2 {
+        border: 1px solid rgb(191, 233, 233);
+        box-shadow: 1px 1px 3px 3px wheat;
+        padding: 10px;
+      }
+      .card2 img {
+        width: 100px;
+        border: 1px solid #000;
+        border-radius: 50%;
+      }
+      .card3 {
+        border: 1px solid rgb(216, 250, 250);
+        padding: 10px;
+        box-shadow: 1px 1px 3px 3px wheat;
+      }
+      .card3 img {
+        width: 100px;
+        border: 1px solid #000;
+        border-radius: 50%;
+      }
+      .card4 {
+        border: 1px solid rgb(236, 252, 252);
+        padding: 10px;
+        box-shadow: 1px 1px 3px 3px wheat;
+      }
+      .card4 img {
+        width: 100px;
+        border: 1px solid #000;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="left">
+          <i class="fa-regular fa-bars" style="color: #f5f9ff"></i>
+          <span>Start</span>
+        </div>
+        <div class="right">
+          <a href="Task-10.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="Services.html">Services</a>
+          <a href="Contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="cont">
+          <h1>WELCOME</h1>
+          <p>
+            <b>Lorem ipsum dolor sit <br />amet consectetur</b>
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing <br />
+            elit. Quidem facere, odit iure illum, vero <br />provident impedit
+            natus ad odio alias, non dolores <br />veniam fuga unde! Fugiat enim
+            ipsum maiores <br />
+            recusandae!
+          </p>
+          <button style="border: none; width: fit-content; margin-top: 15px">
+            Explore
+          </button>
+        </div>
+        <div class="fig">
+          <img src="Group.png" alt="people" />
+        </div>
+      </div>
+    </div>
+    <div class="first">
+      <div class="a">
+        <h4 style="text-align: center">PARTNERS</h4>
+        <h1 style="text-align: center"><b>Lorem Ipsum Dolor</b></h1>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p class="se" style="text-align: center">adipisicing elit.</p>
+      </div>
+      <div class="partners">
+        <img src="goo.png" alt="google" />
+        <img src="ms.png" alt="ms" />
+        <img src="air.png" alt="a" />
+        <img src="fb.png" alt="f" />
+        <img src="spo.png" alt="s" />
+      </div>
+      <div class="learn">
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="second">
+      <div class="for_img">
+        <img src="2.png" alt="w" />
+      </div>
+
+      <div class="sec_cont">
+        <h1>Lorem ipsum dolor sit</h1>
+        <h1>amet consectetur</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+          accusantium, libero eligendi sequi
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="third">
+      <div class="th_cont">
+        <h1>Lorem ipsum dolor sit</h1>
+        <h1>amet consectetur</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+          accusantium, libero eligendi sequi
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="for_img">
+        <img src="4.png" alt="w" />
+      </div>
+    </div>
+    <div class="four">
+      <div class="team">
+        <span>TEAM</span>
+        <h1>Our Talents</h1>
+        <p>Lorem ipsum,dolor sit amet consectetur</p>
+        <p>Suscipt nemo hic quos,ab,</p>
+      </div>
+      <div class="card">
+        <div class="card1">
+          <img src="p1.png" alt="" />
+          <h2>Peg Legge</h2>
+          <p style="color: gray; font-size: x-small; padding-top: 5px">CEO</p>
+        </div>
+        <div class="card2">
+          <img src="p2.png" alt="" />
+          <h2>Richard Guerra</h2>
+          <p style="color: gray; font-size: x-small; padding-top: 5px">CTO</p>
+        </div>
+        <div class="card3">
+          <img src="p3.png" alt="" />
+          <h2>Alexandra Stolz</h2>
+          <p style="color: gray; font-size: x-small; padding-top: 5px">
+            DESIGNER
+          </p>
+        </div>
+        <div class="card4">
+          <img src="p4.png" alt="" />
+          <h2>Janet Bray</h2>
+          <p style="color: gray; font-size: x-small; padding-top: 5px">
+            DEVELOPER
+          </p>
+        </div>
+      </div>
+      <div class="b">
+        <button>View Team</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="le">
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+      <div class="re">
+        <p>@Start,2022. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
