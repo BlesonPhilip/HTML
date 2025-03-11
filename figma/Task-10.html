@@ -10,40 +10,51 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Figma Challenge</title>
     <style>
       * {
         margin: 0;
         /* box-sizing: border-box; */
         font-size: 16px;
+        font-family: 'Work Sans', serif;
       }
       .main {
         background-color: #68d09f;
-        height: 500px;
+        /* height: 500px; */
         width: 100%;
       }
       .navbar {
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around;
         height: 30px;
-        /* position: relative; */
-        /* left: 1 */
-
+        background-color: #69dba6;
         padding-top: 10px;
         display: flex;
         align-items: center;
         color: white;
       }
+
       .left {
         display: flex;
         gap: 10px;
         font-size: large;
         position: relative;
-        left: -50px;
+        right: 100px;
+      }
+      .left img {
+        width: 20px;
       }
       .right {
         display: flex;
         gap: 10px;
+        position: relative;
+        left: 50px;
       }
       a {
         text-decoration: none;
@@ -59,6 +70,7 @@
         position: relative;
         /* top: 20%; */
         color: white;
+        padding-bottom: 10px;
         /* padding-top: 30px; */
       }
       .cont {
@@ -82,7 +94,6 @@
         background-color: rgb(255, 255, 255);
 
         padding: 10px;
-        /* margin-top: 10px; */
       }
       .a {
         padding: 10px;
@@ -159,6 +170,7 @@
       }
       .th_cont {
         padding: 20px;
+        padding-top: 100px;
       }
       .four {
         padding-top: 20px;
@@ -222,13 +234,98 @@
         border: 1px solid #000;
         border-radius: 50%;
       }
+      .footer {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        background-color: #68d09f;
+        display: flex;
+
+        justify-content: space-around;
+      }
+      .le {
+        display: flex;
+        gap: 10px;
+      }
+      .re {
+        color: white;
+      }
+      .le img {
+        width: 10px;
+        height: 10px;
+        gap: 10px;
+        cursor: pointer;
+      }
+      .le img:hover {
+        background-color: #000;
+      }
+      .bar {
+        display: none;
+      }
+      .para1 {
+        width: 300px;
+      }
+      .para2 {
+        width: 300px;
+      }
+      /* .para3 {
+        width: 300px;
+      } */
+      @media (width<700px) {
+        .right {
+          display: none;
+        }
+        .bar {
+          display: block;
+          position: relative;
+          left: 50px;
+        }
+        .content {
+          flex-direction: column-reverse;
+        }
+        .second {
+          flex-direction: column;
+          align-items: center;
+        }
+        .third {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          position: relative;
+
+          left: 200px;
+        }
+
+        .partners {
+          /* display: flex; */
+          flex-direction: column;
+          /* justify-content: space-between; */
+          align-items: center;
+          height: fit-content;
+
+          gap: 1px;
+        }
+        .partners img {
+          padding: 10px;
+          width: 60px;
+        }
+        .footer {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="main">
       <div class="navbar">
         <div class="left">
-          <i class="fa-regular fa-bars" style="color: #f5f9ff"></i>
+          <img src="fi.png" alt="" />
           <span>Start</span>
         </div>
         <div class="right">
@@ -236,6 +333,9 @@
           <a href="portfolio.html">Portfolio</a>
           <a href="Services.html">Services</a>
           <a href="Contact.html">Contact</a>
+        </div>
+        <div class="bar">
+          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
         </div>
       </div>
       <div class="content">
@@ -286,7 +386,7 @@
       <div class="sec_cont">
         <h1>Lorem ipsum dolor sit</h1>
         <h1>amet consectetur</h1>
-        <p>
+        <p class="para1">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           accusantium, libero eligendi sequi
         </p>
@@ -297,7 +397,7 @@
       <div class="th_cont">
         <h1>Lorem ipsum dolor sit</h1>
         <h1>amet consectetur</h1>
-        <p>
+        <p class="para2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           accusantium, libero eligendi sequi
         </p>
@@ -311,7 +411,7 @@
       <div class="team">
         <span>TEAM</span>
         <h1>Our Talents</h1>
-        <p>Lorem ipsum,dolor sit amet consectetur</p>
+        <p class="para3">Lorem ipsum,dolor sit amet consectetur</p>
         <p>Suscipt nemo hic quos,ab,</p>
       </div>
       <div class="card">
@@ -347,13 +447,13 @@
 
     <div class="footer">
       <div class="le">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src="f.png" alt="" />
+        <img src="in.png" alt="" />
+        <img src="t.png" alt="" />
+        <img src="p.png" alt="" />
+        <img src="m.png" alt="" />
+        <img src="ph.png" alt="" />
+        <img src="y.png" alt="" />
       </div>
       <div class="re">
         <p>@Start,2022. All rights reserved.</p>

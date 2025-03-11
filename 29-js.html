@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.js</title>
+
+    <style>
+      .heading {
+        width: fit-content;
+        border: 2px solid black;
+        transition: 2s;
+      }
+      .heading-1 {
+        background-color: red;
+        color: white;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading" onclick="changeColor()" id="main-heading">
+      welcome to the page
+    </h1>
+
+    <script>
+      const changeColor = () => {
+        document.getElementById('main-heading').classList.toggle('heading-1');
+        // document.getElementById('main-heading').classList.add('heading-1');
+        // document.getElementById('main-heading').className = 'heading-1';
+        // document.getElementById('main-heading').style.backgroundColor = 'green';
+      };
+
+      //   alert('hello welcome');
+    </script>
+  </body>
+</html>

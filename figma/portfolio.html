@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        /* box-sizing: border-box; */
+        font-size: 16px;
+        font-family: 'Work Sans', serif;
+      }
+      .main {
+        background-color: #68d09f;
+        /* height: 500px; */
+        width: 100%;
+      }
+      .navbar {
+        width: 100%;
+        justify-content: space-around;
+        height: 30px;
+        background-color: #69dba6;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+
+      .left {
+        display: flex;
+        gap: 10px;
+        font-size: large;
+        position: relative;
+        right: 100px;
+      }
+      .left img {
+        width: 20px;
+      }
+      .right {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        left: 50px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #000;
+      }
+      .bar {
+        display: none;
+      }
+      .first {
+        text-align: center;
+        margin: 10px;
+      }
+      .first span {
+        color: blueviolet;
+      }
+      .card {
+        flex-wrap: wrap;
+        padding-left: 16%;
+        gap: 20px;
+      }
+      /* .card {
+        padding: 50px 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-content: space-evenly;
+      } */
+      .card img {
+        width: 400px;
+      }
+
+      .l {
+        display: flex;
+        justify-content: center;
+      }
+      .l button {
+        background-color: #000;
+        color: aliceblue;
+      }
+      .footer {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        background-color: #68d09f;
+        display: flex;
+
+        justify-content: space-around;
+      }
+      .le {
+        display: flex;
+        gap: 10px;
+      }
+      .re {
+        color: white;
+      }
+      .le img {
+        width: 10px;
+        height: 10px;
+        gap: 10px;
+        cursor: pointer;
+      }
+      .le img:hover {
+        background-color: #000;
+      }
+      @media (width<700px) {
+        .right {
+          display: none;
+        }
+        .bar {
+          display: block;
+          position: relative;
+          left: 50px;
+        }
+        .card {
+          position: relative;
+          right: 35px;
+        }
+        .footer {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <img src="fi.png" alt="" />
+        <span>Start</span>
+      </div>
+      <div class="right">
+        <a href="Task-10.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <div class="bar">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+      </div>
+    </div>
+    <div class="first">
+      <span>WORKS</span>
+      <h1>Portfolio</h1>
+      <p>Lorem ipsum,dolor sit amet consectetur</p>
+      <p>adipisicing elit</p>
+    </div>
+    <div class="card">
+      <img src="1.png" alt="" />
+
+      <img src="2a.png" alt="" />
+
+      <img src="3.png" alt="" />
+
+      <img src="4a.png" alt="" />
+
+      <img src="5.png" alt="" />
+
+      <img src="6.png" alt="" />
+
+      <img src="7.png" alt="" />
+
+      <img src="8.png" alt="" />
+    </div>
+    <div class="l">
+      <button>Learn More</button>
+    </div>
+    <div class="footer">
+      <div class="le">
+        <img src="f.png" alt="" />
+        <img src="in.png" alt="" />
+        <img src="t.png" alt="" />
+        <img src="p.png" alt="" />
+        <img src="m.png" alt="" />
+        <img src="ph.png" alt="" />
+        <img src="y.png" alt="" />
+      </div>
+      <div class="re">
+        <p>@Start,2022. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

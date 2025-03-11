@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include FontAwesome if needed -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+      }
+      .nav {
+        width: 100vw;
+        height: 50px;
+        background-color: aqua;
+      }
+      .left {
+        display: flex;
+        padding: 20px;
+      }
+      .left i {
+        cursor: pointer;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
+        margin-left: -200px;
+        position: absolute;
+        top: 0;
+        background-color: aquamarine;
+        transition: margin 1s;
+      }
+      .sidebar a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        padding-top: 50px;
+        padding-left: 20px;
+      }
+      .sidebar i {
+        padding: 20px;
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="left">
+        <!-- Clicking this icon will open the sidebar -->
+        <i onclick="openSideBar()" class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div id="sidebar-id" class="sidebar">
+      <!-- Clicking this icon will close the sidebar -->
+      <i
+        onclick="crossBar()"
+        id="cross"
+        class="fa-regular fa-x fa-xs"
+        style="color: #74c0fc"
+      ></i>
+      <a href="Home">Home</a>
+      <a href="Service">Service</a>
+      <a href="About">About</a>
+      <a href="Contact">Contact</a>
+    </div>
+
+    <script>
+      // Function to open the sidebar
+      const openSideBar = () => {
+        document.getElementById('sidebar-id').style.marginLeft = '0';
+      };
+
+      // Function to close the sidebar
+      const crossBar = () => {
+        document.getElementById('sidebar-id').style.marginLeft = '-200px';
+      };
+    </script>
+  </body>
+</html>
